@@ -1,0 +1,33 @@
+.container-fluid{
+  background-color: brown;
+  /* padding: 0 !important; */
+  height: 100vh;
+}
+.col-md-6{
+  height: 100vh;
+  box-sizing: border-box;
+}
+.left{
+  padding: 2rem;
+}
+.right{
+  background-image: url('./assets/disco.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* navbar */
+nav ul li a{
+  color: #58cfd8;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+
+nav ul li a:hover {
+  color: rgb(194, 108, 228)
+}
+
+/* content */
+article{
+  margin:12rem 5rem;
+}
