@@ -1,21 +1,35 @@
 import React from 'react';
 import Navbar from './Navbar';
+import Projects from './Projects';
+import Contact from './Contact';
+// import { url } from 'inspector';
 
-function Main() {
+function Main(props) {
+    const styles ={
+        backgroundImage: `url(${props.image})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        // opacity: 0.7
+        overlayColor: 'red',
+    }
     return (
         <div className="row">
-            <div className="col-md-6 right" style={{backgroundColor: 'red'}}>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores beatae nemo sit perspiciatis. Quos veritatis, itaque explicabo dicta, sit dolores deleniti magnam neque nobis iure et nisi ex? Distinctio, odio.</p>
+            <div className="col-md-6 right" style={styles}>
+                
             </div>
             <div className="col-md-6 left" style={{backgroundColor: '#fff'}}>
                 <Navbar />
 
                 {/* content */}
-                <article className="text-center">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reprehenderit beatae illum quae ipsa nesciunt illo enim hic corporis! Hic aspernatur officiis sit tempora voluptate ad veniam, ipsa nesciunt aliquid!</p>
+                <section id='home'>
+                    <article className="text-center">
+                        <p>Hello am Peter Muturi, a fullstack developer whose interests span around bringing ideas from inception to completion. When am not writing code i enjoy my time listening to music, gaming and reading</p>
 
-                    <button className="btn btn-outline-success">Read More</button>
-                </article>
+                        
+                    </article>
+                </section>
+                <Projects />
+                <Contact />
             </div>
         </div>
     );

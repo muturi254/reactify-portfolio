@@ -1,33 +1,83 @@
 .container-fluid{
-  background-color: brown;
-  /* padding: 0 !important; */
-  height: 100vh;
-}
-.col-md-6{
   height: 100vh;
   box-sizing: border-box;
 }
-.left{
-  padding: 2rem;
+.col-md-6{
+  height: 100vh;
+  /* box-sizing: border-box; */
 }
-.right{
-  background-image: url('./assets/disco.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+.left{
+  padding: 0rem;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
+
 /* navbar */
+.navigation {
+  padding: 0;
+  /* position: fixed;
+  align-content: center; */
+}
+
+.navigation .bg-light {
+    background-color: red !important;
+}
 nav ul li a{
-  color: #58cfd8;
-  font-size: 1.2rem;
+  color: rgb(10, 2, 2) !important;
+  font-size: 1.3rem;
   font-family: sans-serif;
+  /* text-transform: uppercase; */
 }
 
 nav ul li a:hover {
-  color: rgb(194, 108, 228)
+  color: #3ec2bb !important;
 }
 
 /* content */
+section#home{
+  background-color: #659dbd;
+  color: white;
+}
+section#home p{
+  font-size: 1.5rem;
+}
+
+section{
+  height: 100vh;
+}
 article{
-  margin:12rem 5rem;
+  padding:12rem 5rem;  
+}
+article button:hover{
+  color: white !important;
+  background-color: #323133 !important;
+  border-color:#323133 !important;
+}
+/* Projects */
+section#projects .row{
+  padding: 0;
+  margin:0;
+}
+section#projects{
+  box-sizing: border-box;
+  padding-top: 3rem;
+}
+section#projects .row{
+  padding: 5rem 1.8rem;
+}
+
+section#projects .card:hover {
+  background-color: rgba(23, 27, 27, 0.5);
+  cursor: pointer;
+  padding: 1rem;
+  color: white;
+}
+
+/* contact */
+section#contact{
+  padding:13rem 5rem;
+  box-sizing: border-box;
+  /* background-color: antiquewhite; */
+  background-color: #557a95;
 }
